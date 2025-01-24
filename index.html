@@ -3,23 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Webseite</title>
+    <title>Portfolio - Demo Webseite</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
         }
-        h1 {
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #34495e;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            background-color: #2c3e50;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
             color: #2c3e50;
         }
-        p {
-            color: #34495e;
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            background: #34495e;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Willkommen auf meiner Demo-Webseite!</h1>
-    <p>Diese Webseite wurde erstellt, um meine Fähigkeiten als Entwickler zu präsentieren.</p>
+    <header>
+        <h1>Willkommen auf meinem Portfolio!</h1>
+        <p>Ich bin Entwickler mit Erfahrung in Figma, CMS, Headless CMS und APIs.</p>
+    </header>
+    <nav>
+        <a href="#skills">Meine Fähigkeiten</a>
+        <a href="#projekte">Projekte</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+    <main>
+        <section id="skills">
+            <h2>Meine Fähigkeiten</h2>
+            <ul>
+                <li><strong>Figma:</strong> Erstellung von UI/UX-Designs und Prototypen.</li>
+                <li><strong>CMS:</strong> Erfahrung mit WordPress, Typo3 und Webflow.</li>
+                <li><strong>Headless CMS:</strong> Strapi, Contentful und Sanity.</li>
+                <li><strong>API-Arbeit:</strong> Integration von PIM, CRM und RESTful APIs.</li>
+                <li><strong>Mac-Nutzer:</strong> Entwicklung mit Tools wie VSCode, Terminal und Design-Software.</li>
+            </ul>
+        </section>
+        <section id="projekte">
+            <h2>Projekte</h2>
+            <p>Hier findest du Beispiele für meine Arbeiten (weitere Details auf der Projekte-Seite).</p>
+        </section>
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Schick mir eine Nachricht: <a href="mailto:dein.email@domain.com">dein.email@domain.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dein Name. Alle Rechte vorbehalten.</p>
+    </footer>
 </body>
 </html>
