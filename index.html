@@ -9,11 +9,11 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff;
+            background-color: #f4f4f9;
             color: #333;
         }
         header {
-            background-color: #e74c3c; /* Rot */
+            background-color: #e74c3c;
             color: white;
             padding: 20px;
             text-align: center;
@@ -21,7 +21,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background: #c0392b; /* Dunkleres Rot */
+            background: #c0392b;
         }
         nav a {
             color: white;
@@ -54,32 +54,31 @@
             text-align: center;
             margin-top: 20px;
         }
-        #headless-cms {
-            background-color: #f4f4f4;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            text-align: left;
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
         }
-        #headless-cms h2 {
+        .icons div {
+            text-align: center;
+        }
+        .icons i {
+            font-size: 50px;
             color: #e74c3c;
         }
-        #headless-cms ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
     </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <h1>Hallo, ich bin Roaa Zaim!</h1>
         <p>Willkommen auf meiner Portfolio-Seite. Schön, dass du da bist!</p>
-        <img src="matof.jpg" alt="Foto von Roaa Zaim">
+        <img src="matof.png" alt="Foto von Roaa Zaim">
     </header>
     <nav>
         <a href="#about">Über mich</a>
-        <a href="#projekte">Projekte</a>
-        <a href="#headless-cms">Headless CMS</a>
+        <a href="#skills">Skills</a>
         <a href="#kontakt">Kontakt</a>
     </nav>
     <main>
@@ -89,7 +88,27 @@
             <p>Ich bin Webentwicklerin mit einem Auge fürs Detail und einer Leidenschaft für ästhetisches und funktionales Design. Ich arbeite gerne kreativ und mag es, moderne Technologien mit elegantem Design zu kombinieren.</p>
         </section>
 
-    
+        <!-- Skills -->
+        <div class="skills">
+            <div class="skill-item">
+                <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C">
+                <p>C</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+        </div>
+
+        </section>
 
         <!-- Kontakt -->
         <section id="kontakt">
